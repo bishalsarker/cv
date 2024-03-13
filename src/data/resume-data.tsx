@@ -2,19 +2,18 @@ import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
 import { PenIcon, YoutubeIcon } from "lucide-react";
 
 export const RESUME_DATA = {
-  name: "Mukesh Murugan",
-  initials: "MM",
-  avatar: "/mukesh_murugan.png",
+  name: "Bishal Sarker",
+  initials: "BS",
+  avatar: "/bishal_sarker.jpg",
   resume: "/cv.pdf",
-  location: "Trivandrum, Kerala, India",
-  url: "https://cv.codewithmukesh.com",
-  ogImage: "/mukeshmurugan_banner.png",
-  twitter: "@iammukeshm",
+  location: "Dhaka, Bangladesh",
+  url: "https://bishalsarker.com",
+  ogImage: "/bishal_sarker.jpg",
   about:
-    "Software Engineer focused on building scalable services on the cloud.",
+    "I build scalable software solutions on the cloud that solves bussiness problems efficiently",
   summary:
-    "Software Engineer with 7+ Years of Experience in Backend development with .NET, Go, Docker, Kubernetes, Terraform and Cloud Technologies like AWS.",
-  personalWebsiteUrl: "https://staging.codewithmukesh.com",
+    "I build products and tools that makes life easier and help businesses grow. I'm a passionate software engineer having 4+ years of professional experience developing commercial web applications with .NET stack. Over the couse of my professional journey I have worked in various areas such as E-commerce, Enterprise Solutions, Production Management Solutions, Reservation Systems, SaaS Applications, Microservices and DevOps. Apart from engineering, I'm a hobbyist musician and use to write in my blog about the tech stuff I do everyday. I train people to get them on board in the tech industry. I love to take new challenges that solves real world bussiness problems.",
+  personalWebsiteUrl: "https://neuronblast.azurewebsites.net/",
   contact: {
     social: [
       {
@@ -28,13 +27,8 @@ export const RESUME_DATA = {
         icon: GitHubIcon,
       },
       {
-        name: "X",
-        url: "https://x.com/iammukeshm",
-        icon: XIcon,
-      },
-      {
         name: "Blog",
-        url: "https://codewithmukesh.com/",
+        url: "https://neuronblast.azurewebsites.net/",
         icon: PenIcon,
       },
       {
@@ -46,106 +40,93 @@ export const RESUME_DATA = {
   },
   education: [
     {
-      school: "Birla Institute of Technology, Mesra",
-      degree: "Electronics & Communication Engineering",
-      start: "2012",
-      end: "2016",
-      location: "Waljat College Of Applied Science, Oman",
-      gpa: "7.2"
+      school: "Daffodil International University",
+      degree: "B. Sc in Software Engineering",
+      start: "2015",
+      end: "2019",
+      location: "Dhaka, Bangladesh"
     },
   ],
   work: [
     {
-      company: "CSG International",
-      location: "Bangalore, Karnataka",
-      badges: ["remote"],
-      title: "SDE 2",
-      start: "February, 2022",
+      company: "Astha IT Research and Consultancy Ltd.",
+      location: "Dhaka, Bangladesh",
+      badges: [],
+      title: "Software Engineer IV",
+      start: "June, 2021",
       end: "Current",
       description:
-        "Designed & Implemented new features, worked on improving the Telecom Rating System. Experience in Microservices, Serverless, and Cloud Technologies.",
+        "I have been a team lead for the Weavio SaaS Platform where my responsibilities were to figure out the product requirements, plan and estimate the project roadmap. I had to design the SaaS application architecture with .NET 6 and PostgreSQL. My goal was to have a scalable system that could handle high-volume data with significant traffic. I have built various modules such as Human Resource Management, Production Management, Script Engine for Reports and more. I also led the team of the StepOut project where I was responsible for designing a microservice architecture with NodeJS and MongoDB. I have built various modules such as learning management system, payments and subscriptions. I have also worked in a large omni-channel e-commerce website called Apex with a thousands of customers and millions of users per month. where I was responsible to build solutions for catalog management, delivery automation and CRM.",
     },
     {
-      company: "ALLIANZ",
-      location: "Trivandrum, Kerala",
-      badges: ["remote"],
-      title: "Senior Software Engineer",
-      start: "March, 2021",
-      end: "February, 2022",
-      description: "Worked on .NET Backend Microservices with RabbitMQ, Docker, ASP.NET Core Web API to build an Input Management System for Insurance Firms."
-    },
-    {
-      company: "PITS",
-      location: "Trivandrum, Kerala",
+      company: "Streams Tech Ltd.",
+      location: "Dhaka, Bangladesh",
       badges: [],
-      title: "Software Engineer",
-      start: "July, 2019",
-      end: "March, 2021",
-      description: "Worked on .NET, WPF, SQL, ASP.NET Core WebAPI to build Point Of Sales System for Automobile Parts Vendors."
-    },
-    {
-      company: "Adroit Solutions LLC",
-      location: "Al Khuwair, Oman",
-      badges: [],
-      title: "C/C++ Developer",
-      start: "2010",
-      end: "2012",
-      description: "Worked on .NET Web API, MVC, SQL for building Point Of Sales System that handle customer transactions."
-    },
+      title: "Associate Software Engineer",
+      start: "June, 2019",
+      end: "June, 2021",
+      description: "Started my career as an Associate Software Engineer at Streams Tech Ltd. Over the course of my journey I worked on various projects from all over the world. I built tools, designed and implemented new features for projects such as healthcare, industries and various firms."
+    }
   ],
   skills: [
     ".NET",
     "ASP.NET Core",
     "Web API",
-    "Golang",
     "Docker",
     "Kubernetes",
     "AWS",
-    "Terraform",
+    "Azure",
     "GitHub Actions",
     "SQL",
-    "NoSQL"
+    "NoSQL",
+    "Microservices",
+    "Design Patterns",
+    "System Design",
+    "Kafka",
+    "RabbitMQ",
+    "Redis"
   ],
   projects: [
     {
-      title: "ARC Offline",
-      organization: "CSG International",
+      title: "apex4u.com",
+      organization: "Apex Footwear Limited",
       techStack: [
-        "Golang",
         ".NET",
-        "Microservices",
+        "GrandNode",
+        "Algolia",
         "AWS",
         "Docker",
         "Kubernetes",
-        "Redis"
+        "Redis",
+        "MongoDB"
       ],
-      description: "Telecom Rating and Processing System Backend with Microservice Architecture running on the Cloud(AWS).",
+      description: "Apex Retail Chain is a Bangladeshi retailer of shoes, clothing, and other accessories founded in 1997 and have been serving the Bangladeshi market for over 20 years",
       points: [
-        "Stack includes Golang, .NET, Kubernetes, Terraform, PostgreSQL, ECS, AWS Lambda, S3, Athena, DynamoDB, SNS, SQS, and other AWS Services.",
-        "Optimized costs (over 2,000 USD per month) by implementing Multitenancy and reducing resource provisioning.",
-        "Cross Team Collaboration for Features",
-        "CI/CD with Azure DevOps Pipelines and AWS CodePipeline.",
-        "Involved in Designing various cross-team integrations, Grooming, and Planning.",
-        "DevOps Activities for cost monitoring, performance tracking, and deploying applications to production and customer - facing environments."
+        "Stack includes .NET, Docker, Kubernetes, MongoDB, AWS Lambda, S3, SNS, SQS",
+        "Optimized catalog search functionality for high traffic",
+        "Cross team collaboration for features",
+        "Involved in Designing various cross-team integrations, grooming, and planning.",
+        "Integrated third-party logistic partners for delivery automation",
+        "Built the core communication module with AWS SQS for syncing omni-channel store stock information"
       ],
     },
     {
-      title: "INSURANCE INPUT MANAGEMENT SYSTEM",
-      organization: "Allianz",
+      title: "weavio.tech",
+      organization: "Weavio",
       techStack: [
         ".NET",
-        "Microservices",
-        "Azure",
-        "Computer Vision",
-        "RabbitMQ",
-        "Web API"
+        "Web API",
+        "AWS",
+        "Docker",
+        "PostgreSQL",
       ],
-      description: "AIMS is responsible for monitoring customer mailboxes, performs OCR using Azure Computer Vision / Google Cloud Vision, and exports the document to other endpoints as needed by the business.",
+      description: "Saas-based simple and complete production management solution for textiles and every other production-based organization",
       points: [
-        "Worked with .NET Core, ASP.NET Core WebAPI, MongoDB, RabbitMQ, Angular, OCR",
+        "Worked with .NET Core, ASP.NET Core WebAPI, PostgreSQL, S3, SNS, SQS, SES",
         "Provided estimates based on tasks and ensured due delivery.",
-        "Involved in complete SDLC for various OE Projects.",
-        "Responsible to Deployment to UAT and Production Environments."
+        "Responsible to Deployment to UAT and Production Environments with CI/CD",
+        "Built various modules for Human Resource Management and Production Management",
+        "Designing a scalable application system architecture"
       ],
     }
   ],

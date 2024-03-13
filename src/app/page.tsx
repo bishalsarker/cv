@@ -12,7 +12,7 @@ import { DownloadIcon, Eye, FlameIcon } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
 
-const redis = Redis.fromEnv();
+// const redis = Redis.fromEnv();
 const pageTitle = `${RESUME_DATA.name} | ${RESUME_DATA.about}`
 
 export const metadata: Metadata = {
@@ -33,21 +33,11 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: './',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: pageTitle,
-    description: RESUME_DATA.summary,
-    images: [
-      RESUME_DATA.url + RESUME_DATA.ogImage
-    ],
-    site: RESUME_DATA.twitter,
-    creator: RESUME_DATA.twitter,
   }
 };
 
 export default async function Page() {
-  const views = await redis.get<number>("pageviews:cv:mukesh");
+  // const views = await redis.get<number>("pageviews:cv:mukesh");
   return (
     <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
       <section className="mx-auto w-full max-w-2xl space-y-8 print:space-y-6">
@@ -69,12 +59,12 @@ export default async function Page() {
             <p className="items-center text-pretty  text-xs text-muted-foreground pb-3">
               {RESUME_DATA.location}
             </p>
-            <span className="flex items-center justify-center gap-1 text-xs text-zinc-500 pb-2">
+            {/* <span className="flex items-center justify-center gap-1 text-xs text-zinc-500 pb-2">
               <Eye className="w-4 h-4" />{" "}
               {Intl.NumberFormat("en-US", { notation: "compact" }).format(
-                views ?? 0,
+                 0,
               )}
-            </span>
+            </span> */}
             <div className=" print:hidden">
               <a href={RESUME_DATA.resume} target="_blank">
                 <Button size={"sm"} variant={'default'} className="text-pretty  text-xs">
@@ -173,7 +163,7 @@ export default async function Page() {
                     {education.start} - {education.end}
                   </div>
                 </CardHeader>
-                <CardContent className="mt-2">{education.degree} • GPA {education.gpa}</CardContent>
+                <CardContent className="mt-2">{education.degree}</CardContent>
               </Card>
             );
           })}

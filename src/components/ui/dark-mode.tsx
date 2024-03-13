@@ -84,19 +84,21 @@ const DarkMode = () => {
         return null
     }
 
-    return (
-        <Button
-            aria-label="toggle theme"
-            className="size-9 m-1 animate-pulse"
-            variant="outline"
-            size="icon"
-            onClick={() => setTheme(theme === 'dark' || resolvedTheme === 'dark' ? 'light' : 'dark')}>
-            <span className="sr-only">Toggle mode</span>
-            <AnimatePresence initial={false}>
-                {theme !== "dark" ? <SunIcon /> : <MoonIcon />}
-            </AnimatePresence>
-        </Button>
-    )
+    setTheme("dark");
+
+    // return (
+    //     <Button
+    //         aria-label="toggle theme"
+    //         className="size-9 m-1 animate-pulse"
+    //         variant="outline"
+    //         size="icon"
+    //         onClick={() => setTheme(theme === 'dark' || resolvedTheme === 'dark' ? 'light' : 'dark')}>
+    //         <span className="sr-only">Toggle mode</span>
+    //         <AnimatePresence initial={false}>
+    //             {theme !== "dark" ? <SunIcon /> : <MoonIcon />}
+    //         </AnimatePresence>
+    //     </Button>
+    // )
 }
 
 export default DarkMode

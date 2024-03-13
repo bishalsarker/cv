@@ -7,12 +7,10 @@ import DarkMode from "@/components/ui/dark-mode";
 import { Section } from "@/components/ui/section";
 import { Views } from "@/components/views";
 import { RESUME_DATA } from "@/data/resume-data";
-import { Redis } from "@upstash/redis";
 import { DownloadIcon, Eye, FlameIcon } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
 
-// const redis = Redis.fromEnv();
 const pageTitle = `${RESUME_DATA.name} | ${RESUME_DATA.about}`
 
 export const metadata: Metadata = {
@@ -37,7 +35,6 @@ export const metadata: Metadata = {
 };
 
 export default async function Page() {
-  // const views = await redis.get<number>("pageviews:cv:mukesh");
   return (
     <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 print:p-12 md:p-16">
       <section className="mx-auto w-full max-w-2xl space-y-8 print:space-y-6">
@@ -59,12 +56,6 @@ export default async function Page() {
             <p className="items-center text-pretty  text-xs text-muted-foreground pb-3">
               {RESUME_DATA.location}
             </p>
-            {/* <span className="flex items-center justify-center gap-1 text-xs text-zinc-500 pb-2">
-              <Eye className="w-4 h-4" />{" "}
-              {Intl.NumberFormat("en-US", { notation: "compact" }).format(
-                 0,
-              )}
-            </span> */}
             <div className=" print:hidden">
               <a href={RESUME_DATA.resume} target="_blank">
                 <Button size={"sm"} variant={'default'} className="text-pretty  text-xs">

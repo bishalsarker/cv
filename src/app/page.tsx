@@ -42,7 +42,7 @@ export default async function Page() {
           <div className="flex-1 space-y-1.5">
             <div className="flex items-center justify-center text-center pb-2">
               <Image
-                src={RESUME_DATA.avatar}
+                src="https://bincommerzstaticstorage.blob.core.windows.net/images/myPhoto.jpg"
                 alt={RESUME_DATA.name}
                 width={250}
                 height={250}

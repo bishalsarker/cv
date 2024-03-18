@@ -4,36 +4,36 @@ import { PenIcon, YoutubeIcon } from "lucide-react";
 export const RESUME_DATA = {
   name: "Bishal Sarker",
   initials: "BS",
-  avatar: "/bishal_sarker.jpg",
+  avatar: "https://bincommerzstaticstorage.blob.core.windows.net/images/myPhoto.jpg",
   resume: "/cv.pdf",
   location: "Dhaka, Bangladesh",
-  url: "https://bishalsarker.com",
+  url: "https://www.bishalsarker.com",
   ogImage: "/bishal_sarker.jpg",
   about:
     "I build scalable software solutions on the cloud that solves bussiness problems efficiently",
   summary:
     "I build products and tools that makes life easier and help businesses grow. I'm a passionate software engineer having 4+ years of professional experience developing commercial web applications with .NET stack. Over the couse of my professional journey I have worked in various areas such as E-commerce, Enterprise Solutions, Production Management Solutions, Reservation Systems, SaaS Applications, Microservices and DevOps. Apart from engineering, I'm a hobbyist musician and use to write in my blog about the tech stuff I do everyday. I train people to get them on board in the tech industry. I love to take new challenges that solves real world bussiness problems.",
-  personalWebsiteUrl: "https://neuronblast.azurewebsites.net/",
+  personalWebsiteUrl: "https://blog.bishalsarker.com/",
   contact: {
     social: [
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/iammukeshm/",
+        url: "https://www.linkedin.com/in/bishalsarker",
         icon: LinkedInIcon,
       },
       {
         name: "GitHub",
-        url: "https://github.com/iammukeshm",
+        url: "https://github.com/bishalsarker",
         icon: GitHubIcon,
       },
       {
         name: "Blog",
-        url: "https://neuronblast.azurewebsites.net/",
+        url: "https://blog.bishalsarker.com/",
         icon: PenIcon,
       },
       {
         name: "YouTube",
-        url: "https://www.youtube.com/@codewithmukesh/videos",
+        url: "https://www.youtube.com/channel/UCNWNQ5-BK6wM_yONEHUgTGA",
         icon: YoutubeIcon,
       },
     ],
